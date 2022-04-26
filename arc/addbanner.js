@@ -19,10 +19,11 @@ module.exports.run = async (client, message, args) => {
                 });
 
                 let msg = messages.join(' ')
-                let channel = client.channels.cache.get("968325940839088148")
+                let channel = client.channels.cache.get("968197420863352922")
 
                 const embed = new Discord.MessageEmbed()
-                .setTitle(`${msg}`)
+                .setTitle(`Submitted by: ${message.author.tag}`)
+                .setDescription(`${msg}`)
                 .setImage(`${attachment.url}`)
                 .setColor(0xff00d0)
                 .setTimestamp()
@@ -30,8 +31,9 @@ module.exports.run = async (client, message, args) => {
 
                 message.reply(`Image successfully archived!`)
             } else if(!args) {
-                let channel = client.channels.cache.get("968325940839088148")
+                let channel = client.channels.cache.get("968197420863352922")
                 const embed = new Discord.MessageEmbed()
+                .setTitle(`Submitted by: ${message.author.tag}`)
                 .setImage(`${attachment.url}`)
                 .setColor(0xff00d0)
                 .setTimestamp()
