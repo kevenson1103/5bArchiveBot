@@ -1,7 +1,4 @@
-const ownerRole = "968183784438648863"
-const adminRole = "968192732122210364"
-const staffRole = "968191734653808692"
-const collectorRole = "968191744246177812"
+const oldRole = "968191860013162596"
 
 const { Client, Collection, Intents } = require('discord.js');
 const Discord = require('discord.js');
@@ -9,7 +6,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 module.exports.run = async (client, message, args) => {
 
-    if(message.member.roles.cache.has(ownerRole) || message.member.roles.cache.has(adminRole) || message.member.roles.cache.has(staffRole) || message.member.roles.cache.has(collectorRole) || message.author.id === "312734500880646145") {
+    if(message.member.roles.cache.has(oldRole) || message.author.id === "312734500880646145") {
         const attachment = message.attachments.first()
         if(attachment) {
             if(args) {
