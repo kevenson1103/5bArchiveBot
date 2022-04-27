@@ -10,7 +10,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 module.exports.run = async (client, message, args) => {
 
     if(message.member.roles.cache.has(ownerRole) || message.member.roles.cache.has(adminRole) || message.member.roles.cache.has(staffRole) || message.member.roles.cache.has(collectorRole) || message.author.id === "312734500880646145") {
-        if(message.toString().includes(`https://discord.gg/`)) {
+        if(message.toString().includes(`youtube.com/watch`)) {
             let messages = [];
             args.forEach(arg => {
                 messages.push(arg)
@@ -18,20 +18,20 @@ module.exports.run = async (client, message, args) => {
 
             let msg = messages.join(' ')
 
-            let channel = client.channels.cache.get("968197155443572736")
+            let channel = client.channels.cache.get("968923222013804594")
                 channel.send(`
 **Submitted by: ${message.author.tag}**
 ${msg}
                 `)
-                message.reply(`Market Discord successfully archived!`)
+                message.reply(`2020 video successfully archived!`)
         } else {
-            message.reply(`Give me a market Discord to archive!`)
+            message.reply(`Give me a video to archive!`)
         }
     } else {
         message.reply(`You do not have permission to use this command!`)
     }
 }
 module.exports.help = {
-    name: "addmarket",
-    aliases: ['marketadd']
+    name: "add2020video",
+    aliases: ['2020videoadd']
 }

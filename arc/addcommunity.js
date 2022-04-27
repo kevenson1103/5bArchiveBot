@@ -25,7 +25,7 @@ ${msg}
                 `)
                 message.reply(`Community Discord successfully archived!`)
         } else {
-            message.reply(`Give me a link to send!`)
+            message.reply(`Give me a community Discord to archive!`)
         }
     } else {
         message.reply(`You do not have permission to use this command!`)

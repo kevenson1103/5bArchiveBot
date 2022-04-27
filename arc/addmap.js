@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Image successfully archived!`)
+                message.reply(`Map successfully archived!`)
             } else if(!args) {
                 let channel = client.channels.cache.get("968197365607571526")
                 const embed = new Discord.MessageEmbed()
@@ -39,12 +39,12 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Image successfully archived!`)
+                message.reply(`Map successfully archived!`)
             }
         } else {
-            message.reply(`Give me an image to send!`)
+            message.reply(`Give me a map to archive!`)
         }
-    } else {ff
+    } else {
         message.reply(`You do not have permission to use this command!`)
     }
 }

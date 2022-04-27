@@ -44,7 +44,7 @@ module.exports.run = async (client, message, args) => {
         } else {
             message.reply(`Give me an image to send!`)
         }
-    } else {ff
+    } else {
         message.reply(`You do not have permission to use this command!`)
     }
 }

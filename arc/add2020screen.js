@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
                 });
 
                 let msg = messages.join(' ')
-                let channel = client.channels.cache.get("968197644142932048")
+                let channel = client.channels.cache.get("968865223266172938")
 
                 const embed = new Discord.MessageEmbed()
                 .setTitle(`Submitted by: ${message.author.tag}`)
@@ -29,9 +29,9 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Render successfully archived!`)
+                message.reply(`Screenshot successfully archived!`)
             } else if(!args) {
-                let channel = client.channels.cache.get("968197644142932048")
+                let channel = client.channels.cache.get("968865223266172938")
                 const embed = new Discord.MessageEmbed()
                 .setTitle(`Submitted by: ${message.author.tag}`)
                 .setImage(`${attachment.url}`)
@@ -39,16 +39,16 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Render successfully archived!`)
+                message.reply(`Screenshot successfully archived!`)
             }
         } else {
-            message.reply(`Give me a render to archive!`)
+            message.reply(`Give me a screenshot to archive!`)
         }
     } else {
         message.reply(`You do not have permission to use this command!`)
     }
 }
 module.exports.help = {
-    name: "addbaserender",
-    aliases: ['baserenderadd']
+    name: "add2020screenshot",
+    aliases: ['2020screenshotadd']
 }
