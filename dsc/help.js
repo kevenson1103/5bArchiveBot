@@ -12,7 +12,7 @@ a.addmap (a.mapadd)
 a.addbanner (a.banneradd)
 a.addcollectible (a.collectibleadd)
 
-** ARCHIVE COMMANDS**
+**SERVER ARCHIVE COMMANDS**
 a.addbasescreenshot (a.basescreenshotadd)
 a.addgriefscreenshot (a.griefscreenshotadd)
 a.addbaserender (a.baserenderadd)
