@@ -12,13 +12,19 @@ a.addmap (a.mapadd)
 a.addbanner (a.banneradd)
 a.addcollectible (a.collectibleadd)
 
-**IMAGE/VIDEO ARCHIVE COMMANDS**
+** ARCHIVE COMMANDS**
 a.addbasescreenshot (a.basescreenshotadd)
 a.addgriefscreenshot (a.griefscreenshotadd)
 a.addbaserender (a.baserenderadd)
 a.addspawnrender (a.spawnrenderadd)
+
+**MEDIA ARCHIVE COMMANDS**
 a.add2020screenshot (a.2020screenshotadd)
 a.add2020video (a.2020videoadd)
+a.add2021screenshot (a.2021screenshotadd)
+a.add2021video (a.2021videoadd)
+a.add2022screenshot (a.2022screenshotadd)
+a.add2022video (a.2022videoadd)
 
 **DISCORD ARCHIVE COMMANDS**
 a.addgroup (a.groupadd)
