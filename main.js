@@ -7,12 +7,13 @@ const { Client, Collection, Intents } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const fs = require('fs');
+const colors = require('colors');
 
 client.on('ready', () => {
-    console.log(`${client.user.username} is online and active in ${client.guilds.cache.size} servers!`)
+    console.log(colors.green(`${client.user.username} is online and active in ${client.guilds.cache.size} servers!`))
     const tEnd = +new Date()
-    console.log(`Init Time: ${tEnd - tStart}ms`)
-    console.log(`////////////////////////////////////////`)
+    console.log(colors.green(`Init Time: ${tEnd - tStart}ms`))
+    console.log(colors.green(`////////////////////////////////////////`))
 })
 
 client.commands = new Discord.Collection(); //command collection init

@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Screenshot successfully archived!`)
+                message.reply(`2022 Screenshot successfully archived!`)
             } else if(!args) {
                 let channel = client.channels.cache.get("970398426611208223")
                 const embed = new Discord.MessageEmbed()
@@ -38,7 +38,7 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 channel.send({embeds:[embed]})
 
-                message.reply(`Screenshot successfully archived!`)
+                message.reply(`2022 Screenshot successfully archived!`)
             }
         } else {
             message.reply(`Give me a screenshot to archive!`)

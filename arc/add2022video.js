@@ -17,12 +17,12 @@ module.exports.run = async (client, message, args) => {
 
             let msg = messages.join(' ')
 
-            let channel = client.channels.cache.get("970398426611208223")
+            let channel = client.channels.cache.get("970398441773613116")
                 channel.send(`
 **Submitted by: ${message.author.tag}**
 ${msg}
                 `)
-                message.reply(`2020 video successfully archived!`)
+                message.reply(`2022 video successfully archived!`)
         } else {
             message.reply(`Give me a video to archive!`)
         }
@@ -31,6 +31,6 @@ ${msg}
     }
 }
 module.exports.help = {
-    name: "add2021video",
-    aliases: ['2021videoadd']
+    name: "add2022video",
+    aliases: ['2022videoadd']
 }

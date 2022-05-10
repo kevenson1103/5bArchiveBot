@@ -3,9 +3,12 @@ const adminRole = "968192732122210364"
 const staffRole = "968191734653808692"
 const collectorRole = "968191744246177812"
 
+const config = require('../config.json')
+
 const { Client, Collection, Intents } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const axios = require('axios')
 
 module.exports.run = async (client, message, args) => {
 
@@ -20,9 +23,10 @@ module.exports.run = async (client, message, args) => {
 
                 let msg = messages.join(' ')
                 let channel = client.channels.cache.get("968197336109031465")
+                let author = message.author.tag
 
                 const embed = new Discord.MessageEmbed()
-                .setTitle(`Submitted by: ${message.author.tag}`)
+                .setTitle(`Submitted by: ${author}`)
                 .setDescription(`${msg}`)
                 .setImage(`${attachment.url}`)
                 .setColor(0xff00d0)

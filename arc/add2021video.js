@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
 **Submitted by: ${message.author.tag}**
 ${msg}
                 `)
-                message.reply(`2020 video successfully archived!`)
+                message.reply(`2021 video successfully archived!`)
         } else {
             message.reply(`Give me a video to archive!`)
         }
