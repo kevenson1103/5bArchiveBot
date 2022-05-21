@@ -1,5 +1,6 @@
 # 5B5T Archive Bot
 This is a Discord bot made for the 5b5t.org archive. The bot is made using [Discord.js](https://discord.js.org/#/)
+![logo](https://cdn.discordapp.com/attachments/396858990858076180/968322376687300678/IMG_5208.jpg)
 
 # Creators
 * kevenson
